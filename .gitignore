@@ -1,0 +1,4 @@
+/client/node_modules
+/express_logic/config.js
+/node_modules
+static.jsonNotNeeded
