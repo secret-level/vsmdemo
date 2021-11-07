@@ -31,7 +31,8 @@ const Home = () =>
 
       <h3>To do</h3>
       <ul className="todo">
-        <li>Rewrite the login logic in react instead of directly accessing html dom elements</li>
+        <li>Should maybe rewrite the login logic in react instead of directly accessing html dom elements?
+            Although the way it's now it doesn't seem that bad.</li>
         <li>In autoreport, the machine name should be in big letters between different machine reports.
             Figure out how to deal with 'if' state logic</li>
         <li>Machines tab should have graphs (graph.js?)</li>
@@ -58,29 +59,33 @@ const Home = () =>
       <h3>To think about</h3>
       <ul className="tothink">
         <li>What should be in user settings?</li>
-        <li>React function vs. class, what and why?</li>
+        <li>React hook function vs. class, what and why?</li>
       </ul>
 
       <h3>Changelog</h3>
       <ul className="changelog">
+        <h4>7.11.2021</h4>
+        <li>UserSettings.jsx: Added (and commented out) the componentDidMount() class method as a hook.
+            The judgement on class vs. hook is still out there.</li>
         <h4>25.10.2021</h4>
-        <li>Added a basic IP logger to login.js.</li>
+        <li>logins.js: Added a basic IP logger.</li>
         <h4>22.9.2021</h4>
         <li>Made various code parts easier to read.</li>
         <h4>20.9.2021</h4>
         <li>Added a short description of the app in the Dashboard section</li>
         <h4>19.9.2021</h4>
-        <li>Added onClick() fetching to Machines.jsx,
-            corresponding server logic to machinesData.js and a /machinesData POST request to index.js</li>
+        <li>Machines.jsx: Added onClick() fetching<br />
+            machinesData.js: Added corresponding server logic<br />
+            index.js: Added a corresponding /machinesData POST request</li>
         <li>Streamlined the names of various functions and variables, added response.status(200/401/500)
             and removed some unneeded server-side console.log() checks</li>
         <h4>18.9.2021</h4>
-        <li>Added simple css styling to Machines.jsx fetched names buttons</li>
-        <li>Added an onClick() function to Machines.jsx which returns the names of the machine-buttons clicked</li>
+        <li>Machines.jsx: Added simple css styling to fetched names buttons</li>
+        <li>Machines.jsx: Added an onClick() function that returns the names of the machine-buttons clicked</li>
         <li>Fixed login/logout timeout crashing (lacked res.x())</li>
-        <li>Removed an unnecessary array layer in machines.js/Machines.jsx query</li>
+        <li>machines.js/Machines.jsx: Removed an unnecessary array layer in the query</li>
         <li>Removed static.json (apparently isn't needed)</li>
-        <li>Commented out functions that don't need to be exported in index.js/machines.js/autoreport.js</li>
+        <li>index.js/machines.js/autoreport.js: Commented out functions that don't need to be exported</li>
       </ul>
 
     </div>
