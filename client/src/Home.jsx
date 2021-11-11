@@ -48,7 +48,6 @@ const Home = () =>
             Make it show something like the 404 page with a link to login if not logged in.</li>
         <li>Properly cancel fetch on switching pages.
             Although it's not clear if the currect implementation on heroku still has the issue (it should have it)</li>
-        <li>error: 'handleClick' is assigned a value but never used (heroku just gives a warning during compilation)</li>
         <li>Navbar routing in app.jsx is sketchy</li>
         <li>ccs positioning seems sketchy. Some of the reports move the navbar slightly.</li>
         <li>The time zone in the localhost app seems to be +0 instead of +2.
