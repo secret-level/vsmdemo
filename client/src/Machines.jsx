@@ -11,7 +11,6 @@ class Machines extends Component
       names: [],
       machineData: []
     };    
-    var handleClick = null;//this is a mess, how to deal with the warming?
   }
 
   componentDidMount()
@@ -27,7 +26,7 @@ class Machines extends Component
     setTimeout(() => console.log(this.state.names), 2500);
   }
 
-  handleClick = (event, machineName) =>
+  handleClick(event, machineName)
   {
     fetch('/machinesData',
     {

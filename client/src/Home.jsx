@@ -64,6 +64,8 @@ const Home = () =>
 
       <h3>Changelog</h3>
       <ul className="changelog">
+        <h4>11.11.2021</h4>
+        <li>Machines.jsx: Fixed handleClick() not being used warning.</li>
         <h4>7.11.2021</h4>
         <li>UserSettings.jsx: Added (and commented out) the componentDidMount() class method as a hook.
             The judgement on class vs. hook is still out there.</li>
